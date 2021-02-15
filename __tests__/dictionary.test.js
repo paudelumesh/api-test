@@ -15,10 +15,6 @@ describe('Create Dictionary', () => {
 });
 
 describe('Create/Modify key-value pair', () => {
-    // it('should create a key-value pair', async () => {
-
-    // });
-
     it('should modify a key-value pair', async () => {
         const response = await modifyKeyValue();
         expect(response.status).toBe(200);
@@ -27,7 +23,6 @@ describe('Create/Modify key-value pair', () => {
 
 
 describe('Delete a dictionary', () => {
-    // console.log(deleteDictionary('/dictionary/af64bda0-e827-4b34-9435-cc1ba682f5bf?id=af64bda0-e827-4b34-9435-cc1ba682f5bf'));
     it('should delete a dictionary', async () => {
         const response = await deleteDictionary('/dictionary/af64bda0-e827-4b34-9435-cc1ba682f5bf?id=af64bda0-e827-4b34-9435-cc1ba682f5bf');
         expect(response.status).toBe(204);
