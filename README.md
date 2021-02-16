@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/paudelumesh/api-test.git    ```
+   git clone https://github.com/paudelumesh/api-test.git  
    ```
 2. Install NPM packages
    ```sh
@@ -40,5 +40,5 @@ To get a local copy up and running follow these simple steps.
 ## Usage
 Run following command to trigger the sitemap generator and lighthouse audit
    ```sh
-   npm test or jest test
+   npm test or yarn test
    ```
