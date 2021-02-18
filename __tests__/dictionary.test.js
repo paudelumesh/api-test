@@ -12,6 +12,8 @@ describe('Create Dictionary', () => {
         expect(response.statusText).toEqual('Created');
         expect(response.status).toBe(201);
     });
+
+    
 });
 
 describe('Create/Modify key-value pair', () => {
@@ -26,5 +28,10 @@ describe('Delete a dictionary', () => {
     it('should delete a dictionary', async () => {
         const response = await deleteDictionary('/dictionary/af64bda0-e827-4b34-9435-cc1ba682f5bf?id=af64bda0-e827-4b34-9435-cc1ba682f5bf');
         expect(response.status).toBe(204);
+    })
+
+    it('should respond 404 on wrong id', async () => {
+        const response = await deleteDictionary('/dictionary/af64bda0-e827-4b34-9435-cc1ba682f5bf?id=af64bda0-e827-4b34-9435-cc1ba682f5bfa');
+        expect(response.status).toBe(404);
     })
 })

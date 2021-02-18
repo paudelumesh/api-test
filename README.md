@@ -38,7 +38,7 @@ To get a local copy up and running follow these simple steps.
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-Run following command to trigger the sitemap generator and lighthouse audit
+Run following command to run tests
    ```sh
    npm test or yarn test
    ```
